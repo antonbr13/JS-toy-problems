@@ -1,3 +1,4 @@
+// €€€€€
 // NUMBER ONE_____________
    // Write a function that takes in a perfect square and returns the next perfect square
    // if the the function is not passed a perfect square then return -1
@@ -68,6 +69,8 @@
 
 // ----------- NEXT PROBLEM -----------------
 
+
+// €€€€€
 // NUMBER TWO_____________
 
    // Make a function that satisfies the below conditions
@@ -218,6 +221,7 @@
 
 // ----------- NEXT PROBLEM -----------------
 
+// €€€€€
 // NUMBER FIVE
    // Reverse a string
       // Take in a string as an argument of a function - have that function return the string in reverse order as a string
@@ -252,10 +256,27 @@
       reverseStr(stringer);
 
 
+   // OR ------------------
+
+      var stringer = "how democratic is the american constitution?";
+
+       function reverseStr(string) {
+           var newStr = '';
+
+           for (var i = string.length - 1; i >= 0; i--) {
+             newStr += string.charAt(i);
+          }
+          return newStr;
+       }
+
+      reverseStr(stringer);
+
+
 
 
 // ----------- NEXT PROBLEM -----------------
 
+// €€€€€
 // NUMBER SIX_____________
 
    //fibonacci sequence function
@@ -290,6 +311,36 @@
 // ----------- NEXT PROBLEM -----------------
 
 // NUMBER SEVEN_____________
+
+   // Backwards Evens
+      // Loop backwards through an array and pull out the even numbers from that array
+
+      var myArr = [2,43,55,634,64,647,7,76,543,34534,7434,34765,786];
+
+      function backLoop(arr) {
+        var solution = [];
+
+
+        for ( var i = arr.length-1; i >= 0; i-- ) {       //looping backwarsds
+          if (arr[i] % 2 === 0) {                    //check for remainder
+            solution.push(arr[i]);
+          }
+        }
+        console.log(solution);
+
+      }
+
+      backLoop(myArr); //-->  [786, 7434, 34534, 76, 64, 634, 2]
+
+      // WALK-THROUGH:
+
+         //create a function that takes in an array
+         // loop backwards through that given array
+         // check for even numbers with modulous (arr[i] % 2 === 0)
+         // push each arr[i]   (index) that satisfies that condition of being even to the solution array 
+
+
+
 
 // ----------- NEXT PROBLEM -----------------
 
